@@ -1,0 +1,21 @@
+
+*.doc
+*.docx
+
+# latex buff file
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+*.xdv
+
+_minted-智能交通锥通讯系统设计与实现/
+
+

@@ -1,0 +1,52 @@
+\chapter{补充内容}
+
+附录是与论文内容密切相关、但编入正文又影响整篇论文编排的条理和逻辑性的资料，例如某些重要的数据表格、计算程序、统计表等，是论文主体的补充内容，可根据需要设置。
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.42\linewidth]{./content/test.png}
+  \caption{fig-appendix}
+  \label{fig:fig-appendix}
+\end{figure}
+
+\begin{table}[h]
+  \centering
+  \caption{table-example-appendix}
+  \begin{tabular}{cccccc}
+    \toprule
+    数据库  & 原始图像数 & 失真图像数 & 失真类型 & 主观评价法 & 参评人员数 \\
+    \midrule
+    LIVE    & 29         & 779        & 5       & DMOS       & 161        \\
+    TID2013 & 25         & 3000       & 24      & MOS        & 971        \\
+    \bottomrule
+  \end{tabular}
+  \label{tab:table-example-appendix}
+\end{table}
+
+\begin{listing}[h]
+  \begin{minted}[baselinestretch=1.0,linenos=true,breaklines,autogobble]{c}
+    /**
+     * @brief  LED亮度控制中断
+     * @param  none
+     * @retval none
+     */
+    typedef uint8_t  LED8BitsType;
+    void LED_PeriodElapsedCallback(void){
+        int i = 0;
+        static LED8BitsType led_bright_tick = 0;
+        led_bright_tick += 1;
+        if(led_bright_tick>=100){
+            led_bright_tick = 0;
+        }
+        if(led_bright_tick == led.brightness){
+            HAL_GPIO_WritePin(FnLED_GPIO_Port, FnLED_Pin, GPIO_PIN_RESET);
+        }else if(led_bright_tick == 0){
+            HAL_GPIO_WritePin(FnLED_GPIO_Port, FnLED_Pin, GPIO_PIN_RESET);
+        }
+    }
+    \end{minted}
+    \caption{code-example}
+    \label{listing:example}
+\end{listing}
+
+以上为代码示例以上为代码示例以上为代码示例以上为代码示例以上为代码示例以上为代码示例以上为代码示例以上为代码示例以上为代码示例以上为代码示例以上为代码示例以上为代码示例
