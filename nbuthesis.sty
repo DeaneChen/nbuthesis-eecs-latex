@@ -170,9 +170,9 @@
 \newenvironment{abstract}{
     \tableformatset
     \chapter*{\thesistitle\\ \vspace{0.7em} 
-	摘\quad 要}
-    \addcontentsline{toc}{chapter}{摘\quad 要}%
-	\chaptermark{摘\quad 要}
+	摘\hspace{1em}要}
+    \addcontentsline{toc}{chapter}{摘\hspace{1em}要}%
+	\chaptermark{摘\hspace{1em}要}
     \vspace{0.5em}
     \renewcommand{\kwlabel}{{\kwlabelfmt
         关键字\quad%
@@ -286,8 +286,8 @@
 \makeatletter
 \newenvironment{acknowledgements}{%
 %   \@mainmatterfalse
-  \chapter*{致\quad 谢}
-  \addcontentsline{toc}{chapter}{致\quad 谢}
+  \chapter*{致\hspace{1em}谢}
+  \addcontentsline{toc}{chapter}{致\hspace{1em}谢}
 }{
   \par
 }
