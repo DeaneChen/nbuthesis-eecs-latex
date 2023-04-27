@@ -135,6 +135,7 @@
 
 
 % -------------------------  摘要调节  ------------------------- %
+\RequirePackage{mfirstuc}
 % 关键字格式化输出
 \newcounter{countargs}   %   count items in the list
 \newcounter{iterateargs} %   iterate over items in list
@@ -163,7 +164,7 @@
 % 关键字标签格式
 \newcommand{\kwlabelfmt}{\sffamily}
 % 关键字格式
-\newcommand{\printkeyword}[1]{\kaiti #1}
+\newcommand{\printkeyword}[1]{\kaiti\capitalisewords{#1}}
 % 关键字分隔符
 \newcommand{\keywordlistsep}[1]{#1}
 % 中文摘要环境
