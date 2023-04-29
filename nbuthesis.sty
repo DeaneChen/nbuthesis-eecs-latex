@@ -273,15 +273,28 @@
 % \AtBeginEnvironment{table}{\mytable}
 
 
+% -------------------------  列表格式  ------------------------- %
+\RequirePackage{enumitem}
+\setitemize[1]{leftmargin=3.5em,itemsep=0pt,partopsep=0pt,parsep=\parskip,topsep=0pt}
+\setenumerate[1]{leftmargin=3.5em,itemsep=0pt,partopsep=0pt,parsep=\parskip,topsep=0pt}
+
 % -------------------------  量和单位  ------------------------- %
 \RequirePackage{siunitx} % 单位格式化
 
 % -------------------------  参考文献  ------------------------- %
 %\citestyle{super}
 %\usepackage[backend=biber,style=gb7714-2015,gbnamefmt=lowercase,gbpub=false,gbpunctin=false,doi=false]{biblatex}
-%\addbibresource{ref.bib}
+% \RequirePackage{cite}
+\RequirePackage[backend=biber,style=gb7714-2015,gbtype=true, gbpunctin=false,gbpub=false, nohashothers=false, gbnamefmt =lowercase, doi=false]{biblatex}  % , gbbiblabel=plain
+\DefineBibliographyStrings{english}{in={}}
+\addbibresource{refs.bib}
+\defbibheading{bibliography}[\bibname]{
+    \chapter*{#1}
+    \addcontentsline{toc}{chapter}{#1}
+}
+
 \RequirePackage{url}
-\RequirePackage{notoccite}
+\RequirePackage{notoccite}%
 
 % -------------------------  致谢环境  ------------------------- %
 \makeatletter
@@ -314,8 +327,9 @@
 
 % ------------------------  自定义命令  ------------------------ %
 % 固定长度下划线
+\RequirePackage{ulem}
 \makeatletter
-\newcommand\dlmu[2][4cm]{\hskip1pt\underline{\hb@xt@ #1{\hss#2\hss}}\hskip3pt} 
+\newcommand\dlmu[2][4cm]{\hskip1pt\uline{\hb@xt@ #1{\hss#2\hss}}\hskip3pt} 
 \makeatother
 
 
