@@ -16,6 +16,8 @@
 *.toc
 *.xdv
 
+.vscode/
+
 _minted-example/
 
 

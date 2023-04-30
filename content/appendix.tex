@@ -2,14 +2,48 @@
 
 附录是与论文内容密切相关、但编入正文又影响整篇论文编排的条理和逻辑性的资料，例如某些重要的数据表格、计算程序、统计表等，是论文主体的补充内容，可根据需要设置。
 
-\begin{figure}[h]
+\begin{figure}[htbp]
   \centering
   \includegraphics[width=0.42\linewidth]{./content/test.png}
   \caption{fig-appendix}
   \label{fig:fig-appendix}
 \end{figure}
 
-\begin{table}[h]
+以下为分图示例以下为分图示例
+
+以下为分图示例以下为分图示例
+
+以下为分图示例以下为分图示例
+
+以下为分图示例以下为分图示例以下为分图示例以下为分图示例
+
+以下为分图示例：
+
+\begin{figure}[htbp]
+  \centering
+  \subcaptionbox{分图 A\label{fig:subfig-a}}
+    {\includegraphics[width=0.4\linewidth]{./content/test.png}}
+  \subcaptionbox{分图 B\label{fig:subfig-b}}
+    {\includegraphics[width=0.4\linewidth]{./content/test.png}}
+  \caption{多个分图的示例}
+  \label{fig:multi-image}
+\end{figure}
+
+以下为表格示例
+
+以下为表格示例
+
+以下为表格示例
+
+以下为表格示例
+
+以下为表格示例
+
+以下为表格示例以下为表格示例
+
+以下为表格示例：
+
+\begin{table}[htbp]
   \centering
   \caption{table-example-appendix}
   \begin{tabular}{cccccc}
@@ -23,7 +57,18 @@
   \label{tab:table-example-appendix}
 \end{table}
 
-\begin{listing}[h]
+以下为代码示例
+以下为代码示例
+
+以下为代码示例
+
+以下为代码示例
+
+以下为代码示例以下为代码示例
+
+以下为代码示例：
+
+\begin{listing}[htbp]
   \begin{minted}[baselinestretch=1.0,linenos=true,breaklines,autogobble]{c}
     /**
      * @brief  LED亮度控制中断
@@ -49,4 +94,3 @@
     \label{listing:example}
 \end{listing}
 
-以上为代码示例以上为代码示例以上为代码示例以上为代码示例以上为代码示例以上为代码示例以上为代码示例以上为代码示例以上为代码示例以上为代码示例以上为代码示例以上为代码示例

@@ -1,9 +1,7 @@
 \documentclass[zihao=-4,oneside,openany,fontset=none]{ctexbook}
 
 \usepackage{nbuthesis}
-\usepackage[sort]{natbib}
-\usepackage{gbt7714}
-\bibliographystyle{gbt7714-numerical}
+\addbibresource{refs.bib}
 
 % 论文基本信息配置
 \newcommand{\doctype }{宁波大学信息学院本科毕业设计（论文）}
@@ -60,9 +58,8 @@
 
 % 参考文献
 \begin{spacing}{1.5}
-  \zihao{5}\setlength{\bibsep}{0em}
-  \addcontentsline{toc}{chapter}{参考文献}
-  \bibliography{refs}   
+  \zihao{5}\setlength{\bibitemsep}{0em}
+  \printbibliography[title=参考文献]
 \end{spacing} 
 
 

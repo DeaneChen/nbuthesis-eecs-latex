@@ -283,11 +283,8 @@
 
 % -------------------------  参考文献  ------------------------- %
 %\citestyle{super}
-%\usepackage[backend=biber,style=gb7714-2015,gbnamefmt=lowercase,gbpub=false,gbpunctin=false,doi=false]{biblatex}
-% \RequirePackage{cite}
 \RequirePackage[backend=biber,style=gb7714-2015,gbtype=true, gbpunctin=false,gbpub=false, nohashothers=false, gbnamefmt =lowercase, doi=false]{biblatex}  % , gbbiblabel=plain
 \DefineBibliographyStrings{english}{in={}}
-\addbibresource{refs.bib}
 \defbibheading{bibliography}[\bibname]{
     \chapter*{#1}
     \addcontentsline{toc}{chapter}{#1}
